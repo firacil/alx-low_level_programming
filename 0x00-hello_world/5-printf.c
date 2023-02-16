@@ -2,8 +2,7 @@
 
 
 /*
- * main - Prints "with proper grammar, but the outcome is
- * a piece of art," followed newline
+ * main - A program that print a line using the printf function
  * Return: Always 0.
  */
 
