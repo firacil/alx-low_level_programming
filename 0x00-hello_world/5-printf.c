@@ -2,7 +2,7 @@
 
 
 /*
- * main - A program that print a line using the printf.
+ * main- A program that print a line using the printf.
  * Return: Always 0.
  */
 
