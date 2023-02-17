@@ -8,10 +8,7 @@
 
 int main(void)
 {
-	int n;
-
-        printf("give me a number: ");
-	scanf("%d", &n);
+	int n=0;
 
 
 	if (n > 0)
