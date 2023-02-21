@@ -16,14 +16,3 @@ void print_alphabet(void)
 	_putchar('\n');
 
 }
-
-/**
- * main - prints lowercase from function calling.
- * Return: 0.
- */
-
-int main(void)
-{
-	print_alphabet();
-	return (0);
-}
