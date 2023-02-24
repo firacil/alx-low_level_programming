@@ -2,6 +2,7 @@
 
 /**
  * print_line - prints line on the terminal.
+ * @n: its the number of times.
  * Return: 1 or 0.
  */
 
@@ -15,7 +16,7 @@ void print_line(int n)
 	}
 	else
 	{
-		for ( c = 0; c < n; c++)
+		for (c = 0; c < n; c++)
 		{
 			_putchar(95);
 		}
