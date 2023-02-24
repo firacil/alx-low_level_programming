@@ -2,32 +2,40 @@
 #include <stdio.h>
 
 /**
- * main - prints  a number from 1 to 100 & fizz buzz.
+ * main - Prints a Fizz Buzz.
  * Return: 0.
  */
 
 int main(void)
+
 {
+
 	int x;
-	char c = "Fizz";
-	char d = "Buzz";
 
 	for (x = 1; x <= 100; x++)
 	{
-		if (x % 3 == 0)
-		{
-			printf("Fizz");
-		}
-		else if (x % 5 == 0)
-		{
-			printf("Buzz");
-		}
-		else
-			printf("%d", x);
-		if (x != 100)
-		{
-			printf(" ");
-		}
+	if ((x % 3 == 0) && (x % 5 == 0))
+	{
+	printf("FizzBuzz");
 	}
-		printf("\n");
+	else if (x % 3 == 0)
+	{
+	printf("Fizz");
+	}
+	else if (x % 5 == 0)
+	{
+	printf("Buzz");
+	}
+	else
+	{
+	printf("%d", x);
+	}
+	if (x != 100)
+	{
+	printf(" ");
+	}
+	}
+	printf("\n");
+	return (0);
+
 }
