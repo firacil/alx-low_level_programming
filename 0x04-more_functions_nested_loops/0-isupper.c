@@ -6,9 +6,9 @@
  * Return: 0 or 1.
  */
 
-int _isupper(int c)
+int _isupper(int u)
 {
-	if (c >= 65 && c <= 90)
+	if (u >= 65 && u <= 90)
 		return (1);
 	else
 		return (0);
