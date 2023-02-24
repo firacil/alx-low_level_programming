@@ -16,16 +16,20 @@ int main(void)
 	{
 		if (x % 3 == 0)
 		{
-			printf("%s", c);
-			_putchar(32);
+			printf("Fizz");
+			
 		}
 		else if (x % 5 == 0)
 		{
-			printf("%s", d);
-			_putchar(32);
+			printf("Buzz");
+			
 		}
 		else
 			printf("%d", x);
-			_putchar(32);
+		if (x != 100)
+		{
+			printf(" ");
+		}
 	}
+		printf("\n");
 }
