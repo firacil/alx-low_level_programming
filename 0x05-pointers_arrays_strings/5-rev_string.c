@@ -6,7 +6,7 @@
  * Return: none.
  */
 
-void rev_string(char *s);
+void rev_string(char *s)
 {
 	int l = 0, indx = 0;
 	char tmpo;
@@ -16,7 +16,7 @@ void rev_string(char *s);
 	for (indx = l - 1; indx >= l / 2; indx--)
 	{
 		tmpo = s[indx];
-		s[indx] = s[len - indx - 1];
-		s[len - indx - 1] = tmp;
+		s[indx] = s[l - indx - 1];
+		s[l - indx - 1] = tmpo;
 	}
 }
