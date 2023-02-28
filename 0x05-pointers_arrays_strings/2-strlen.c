@@ -2,8 +2,8 @@
 
 /**
  * _strlen - prints the length of the string.
- * @str: charachter to be tested.
- * Return: none.
+ * @s: charachter to be tested.
+ * Return: length.
  */
 
 int _strlen(char *s)
