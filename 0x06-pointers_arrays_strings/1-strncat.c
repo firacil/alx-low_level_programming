@@ -2,9 +2,10 @@
 
 /**
  * _strncat - concatnate two strings.
- * @dest - first string.
- * @src - second string.
- * @n - integer number to be tested.
+ * @dest: first string.
+ * @src: second string.
+ * @n: integer number to be tested.
+ * Return: string.
  */
 
 char *_strncat(char *dest, char *src, int n)
