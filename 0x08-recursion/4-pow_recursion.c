@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * int _pow_recursion - return power of numbers.
+ * _pow_recursion - return power of numbers.
  * @x: number to be powered.
  * @y: power number.
  * Return: integer.
@@ -13,5 +13,10 @@ int _pow_recursion(int x, int y)
 	{
 		return (-1);
 	}
-	return (_pow_recursion(x ^ y));
+	if (y == 0)
+	{
+		return (1);
+	}
+
+	return (x * _pow_recursion(x, y - 1));
 }
