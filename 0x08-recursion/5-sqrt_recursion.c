@@ -8,14 +8,24 @@ include "main.h"
 
 int _sqrt_recursion(int n)
 {
-	if (n < 0)
-	{
-		return (-1);
-	}
-	if (n == 0)
-	{
-		return (0);
-	}
+	return (_sqrt(n, 1));
+}
 
-	return (_sqrt_recursion(n) * n);
+/**
+  * _sqrt - Calculate square root
+  * @n: number to be calculated.
+  * @i: iteration.
+  * Return: the natural square root
+  */
+
+int _sqrt(int n, int i)
+{
+	int sqrt = i * i;
+
+	if (sqrt > n)
+		return (-1);
+
+	if (sqrt == n)
+		return (i);
+	return (_sqrt(n, i + 1));
 }
