@@ -1,14 +1,14 @@
 #include "main.h"
 #include <stdio.h>
 
+
+int checkp(int n, int i);
+
 /**
  * is_prime_number - returns a prime numbers.
  * @n: number to be tested.
  * Return: 0 or 1.
  */
-
-int checkp(int n, int i);
-
 
 int is_prime_number(int n)
 {
