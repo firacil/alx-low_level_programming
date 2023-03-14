@@ -26,5 +26,5 @@ char *create_array(unsigned int size, char c)
 		sosi[i] = c;
 	}
 
-	return (s);
+	return (sosi);
 }
