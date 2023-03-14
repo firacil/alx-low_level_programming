@@ -1,25 +1,30 @@
 #include "main.h"
+#include <stdlib.h>
 
 /**
  * create_array - creates an array of charachter.
  * @c: charachter.
- * @size: is the number of byte of choosen data type.
+ * @size: the size of array.
  * Return: pointer or Null.
  */
 
 char *create_array(unsigned int size, char c)
 {
-	char *c;
-
-	c = malloc(sizeof(*c) * 1);
-	c[0] = '';
+	unsigned int i;
+	char *sosi;
 
 	if (size == 0)
-	{
 		return (NULL);
-	}
-	if (c == NULL)
+
+	sosi = malloc(size * sizeof(char));
+
+	if (s == NULL)
+		return (NULL);
+
+	for (i = 0; i < size; i++)
 	{
-		return (*c);
+		sosi[i] = c;
 	}
+
+	return (s);
 }
