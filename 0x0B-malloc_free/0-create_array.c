@@ -8,9 +8,10 @@
 
 char *create_array(unsigned int size, char c)
 {
-	char *s;
+	char *c;
 	
-	c [0] = 'H';
+	
+	c = malloc(sizeof(*c) * 1);
 
 	if (size == 0)
 	{
