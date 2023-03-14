@@ -3,22 +3,23 @@
 /**
  * create_array - creates an array of charachter.
  * @c: charachter.
+ * @size: is the number of byte of choosen data type.
  * Return: pointer or Null.
  */
 
 char *create_array(unsigned int size, char c)
 {
-	char *c;
-	
-	c = malloc(sizeof(*c) * 1);
-	c[0] = ' ';
+	char *str;
+
+	str = malloc(sizeof(*str) * 1);
+	str[0] = 'H';
 
 	if (size == 0)
 	{
 		return (NULL);
 	}
-	if (c == NULL)
+	if (str == NULL)
 	{
-		return(NULL);
+		return (*str);
 	}
 }
