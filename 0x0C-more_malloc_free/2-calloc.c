@@ -21,7 +21,7 @@ void *_calloc(unsigned int nmemb, unsigned int size)
 
 	if (arr == NULL)
 		return (NULL);
-	
+
 	while (i < j)
 	{
 		arr[i] = 0;
