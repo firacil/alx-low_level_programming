@@ -9,17 +9,11 @@
 
 void *malloc_checked(unsigned int b)
 {
-	int *ptr;
 
-	ptr = (int *) malloc(sizeof(int) * b);
+	 malloc(sizeof() * b);
 
 	if (ptr == NULL)
 	{
 		return (98);
 	}
-	else
-	{
-		printf("%p\n", (void *)ptr);
-	}
 }
-
