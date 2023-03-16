@@ -3,7 +3,7 @@
 #include <stdio.h>
 
 /**
- * string_nconcat -  concatenates two strings.
+ * string_nconcat - concatenates two strings.
  * @s1: first string.
  * @s2: second string.
  * @n: number of strings.
@@ -25,21 +25,21 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 		b++;
 	if (n >= b)
 		c = a + b;
-	else 
+	else
 		c = a + n;
 	string = malloc(sizeof(char) * c + 1);
 	if (string == NULL)
 		return (NULL);
 	b = 0;
 
-	while ( d < 1)
+	while (d < 1)
 	{
 		if (d <= a)
 			string[d] = s1[d];
 		if (d >= a)
 		{
 			string[d] = s2[b];
-			b++
+			b++;
 		}
 		d++;
 	}
