@@ -19,20 +19,24 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 		s1 = "";
 	if (s2 == NULL)
 		s2 = "";
+
 	while (s1[a])
 		a++;
+
 	while (s2[b])
 		b++;
+
 	if (n >= b)
 		c = a + b;
 	else
 		c = a + n;
+
 	string = malloc(sizeof(char) * c + 1);
 	if (string == NULL)
 		return (NULL);
-	b = 0;
 
-	while (d < 1)
+	b = 0;
+	while (d < c)
 	{
 		if (d <= a)
 			string[d] = s1[d];
