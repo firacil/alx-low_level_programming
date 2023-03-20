@@ -1,16 +1,11 @@
-#include <stdlib.h>
-#include "main.h"
+#include <stdio.h>
 
 /**
- * main - printsthe name of the file it compiled from.
- * char - name of the file.
- * Return: integer.
+ * main - prints the name of the file it compiled from.
+ * Return: None.
  */
 
-int main(void)
+void main(void)
 {
-	char c;
-
-	printf("%s\n", c);
-	return (0);
+	printf("%s\n", __FILE__);
 }
