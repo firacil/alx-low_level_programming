@@ -1,5 +1,5 @@
-#ifndef _HEAD_
-#define _HEAD_
+#ifndef _HEADER_
+#define _HEADER_
 
 /**
  * struct dog - holds three combination of structure.
@@ -14,4 +14,12 @@ struct dog
 	float age;
 	char *owner;
 };
+
+/**
+ * dog_t - typedef of struct dog.
+ */
+
+typedef struct dog dog_t;
+
+void init_dog(struct dog *d, char *name, float age, char *owner);
 #endif
