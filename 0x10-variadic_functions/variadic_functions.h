@@ -1,5 +1,5 @@
-#ifndef VARIADIC_FUNCTIONS_H
-#define VARIADIC_FUNCTIONS_H
+#ifndef _VARIADIC_FUNCTIONS_H
+#define _VARIADIC_FUNCTIONS_H
 
 #include <stdarg.h>
 
@@ -24,5 +24,4 @@ typedef struct format_types
 	char *identifier;
 	void (*f)(char *separator, va_list args);
 } f_dt;
-
 #endif
