@@ -19,7 +19,7 @@ list_t *add_node(list_t **head, const char *str)
 		if (buf == NULL)
 			return (NULL);
 		buf->str = strdup(str);
-		buf->len = _strlen(str);
+		buf->len = _str(str);
 		buf->next = *head;
 
 		*head = buf;
@@ -29,4 +29,21 @@ list_t *add_node(list_t **head, const char *str)
 	}
 
 	return (0);
+}
+/**
+ * _str - return strings length.
+ * @c: string count.
+ * Return: length.
+ */
+
+int _str(const char *c)
+{
+	int f = 0;
+
+	while (*c)
+	{
+		c++;
+		f++;
+	}
+	return (f);
 }
