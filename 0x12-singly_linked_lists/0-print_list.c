@@ -8,14 +8,14 @@
 
 size_t print_list(const list_t *h)
 {
-	size_t num = 0;
+	size_t no = 0;
 
 	while (h)
 	{
 		printf("%d\n", h->len);
-		num++;
+		no++;
 		h = h->next;
 	}
 
-	return (num);
+	return (no);
 }
