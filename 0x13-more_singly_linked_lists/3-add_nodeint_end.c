@@ -26,11 +26,12 @@ listint_t *add_nodeint_end(listint_t **head, const int n)
 	}
 
 	temp = *head;
-	while (pointer->next)
+
+	while (temp->next)
 	{
-		pointer = pointer->next;
+		temp = temp->next;
 	}
-	pointer->next = new;
+	temp->next = new;
 
 	return (new);
 }
