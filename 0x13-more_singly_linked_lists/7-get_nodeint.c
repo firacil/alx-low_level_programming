@@ -10,7 +10,7 @@
 listint_t *get_nodeint_at_index(listint_t *head, unsigned int index);
 {
 	unsigned int f = 0;
-	listint_t *nindex = head;
+	listint_t *n_index = head;
 
 	if (head == NULL)
 	{
@@ -21,9 +21,9 @@ listint_t *get_nodeint_at_index(listint_t *head, unsigned int index);
 	{
 		if (head == NULL)
 			return (NULL);
-		nindex = head->next;
-		head = nindex;
+		n_index = head->next;
+		head = n_index;
 		++f;
 	}
-	return (nindex);
+	return (n_index);
 }
