@@ -7,7 +7,7 @@
  * Return: 1 or -1.
  */
 
-int set_bit(unsigned ling int *n, unsigned int index)
+int set_bit(unsigned long int *n, unsigned int index)
 {
 	int i;
 
