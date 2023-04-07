@@ -20,7 +20,7 @@ unsigned int flip_bits(unsigned long int n, unsigned long int m)
 		m = m >> 1;
 
 		if (c1 != c2)
-			f += 1;
+			f++;
 	}
 	return (f);
 }
