@@ -21,18 +21,18 @@ ssize_t read_textfile(const char *filename, size_t letters)
 
 	if (filename == NULL)
 		return (0);
-	f = fopen(filename, O_RDONLY);
+	f = open(filename, O_RDONLY);
 	if (f == -1)
 		return (0);
 	buf = malloc(sizeof(char) * letters);
 	if (buf == NULL)
 	{
-		fclose(f);
+		close(f);
 		return (0);
 	}
 
 	rl = read(f, buf, letters);
-	fclose(f);
+	close(f);
 
 	if (rl == -1)
 	{
@@ -44,5 +44,4 @@ ssize_t read_textfile(const char *filename, size_t letters)
 	if (rl != wl)
 		return (0);
 	return (wl);
-
 }
