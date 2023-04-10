@@ -21,7 +21,7 @@ int main(int argc, char *argv[])
 		exit(97);
 	}
 	src = open(argv[1], O_RDONLY);
-	check_s(src, -1, agv[1], 'o');
+	check_s(src, -1, argv[1], 'O');
 	dest = open(argv[2], O_WRONLY | O_CREAT | O_TRUNC, m);
 	check_s(dest, -1, argv[2], 'W');
 
