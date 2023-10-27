@@ -7,7 +7,7 @@
  * Return: Integer.
  */
 
-int main(int argc, char __attribute__((__unused__)) *argv[])
+int main(int argc, char *argv[] __attribute__((__unused__)))
 {
 	int i = 0;
 	int j = 1;
