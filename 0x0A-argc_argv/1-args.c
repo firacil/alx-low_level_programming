@@ -9,12 +9,7 @@
 
 int main(int argc, char *argv[] __attribute__((__unused__)))
 {
-	int i = 0;
-	int j = 1;
-
-	if (argc == 1)
-		printf("%d\n", i);
-	else
-		printf("%d\n", argc - 1);
+	printf("%d\n", argc - 1);
+	
 	return (0);
 }
