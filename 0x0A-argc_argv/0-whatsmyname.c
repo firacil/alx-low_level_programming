@@ -1,10 +1,10 @@
 #include <stdio.h>
-#include <stdlib.h>
 
 /**
  * main - prints excutable file name.
  * @argc: argument count.
  * @argv: argument vector.
+ * Return: Integer.
  */
 
 int main(int argc _attribute_((unused)), char *argv[])
