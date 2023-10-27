@@ -1,21 +1,19 @@
 #include "main.h"
 
 /**
- * puts2 - Prints other character of a string
- * @str: string tested.
+ * _puts - prints a string.
+ * @str: tested charachter.
  * Return: none.
  */
 
-void puts2(char *str)
-
+void _puts(char *str)
 {
-
 	int i;
 	int j = 0;
 
 	while (str[j] != '\0')
 	{
-	j++;
+		j++;
 	}
 
 	for (i = 0; i < j; i += 2)
