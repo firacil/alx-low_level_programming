@@ -13,8 +13,8 @@ char *create_array(unsigned int size, char c)
 	int i;
 	char *str;
 
-	str = malloc((size + 1) * sizeof(char));
-	if (size == NULL)
+	str = malloc(size * sizeof(char));
+	if (size == 0 && str == NULL)
 	{
 		return (NULL);
 	}
