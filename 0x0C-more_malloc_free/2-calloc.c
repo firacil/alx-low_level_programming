@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * _calloc - allocates memory for an array of a certain number entity of elements...
+ * _calloc - allocates memory for an array of a certain number
  * @nmemb: no of elements.
  * @size: byte size of each array element.
  * Return: Null or pointer to allocated memory.
