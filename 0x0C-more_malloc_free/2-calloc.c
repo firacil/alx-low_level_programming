@@ -7,7 +7,7 @@
  * Return: Null or pointer to allocated memory.
  */
 
-void *_clloc(unsigned int nmemb, unsigned int size)
+void *_calloc(unsigned int nmemb, unsigned int size)
 {
 	void *m;
 	char *filr;
