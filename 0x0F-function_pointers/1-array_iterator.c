@@ -10,8 +10,16 @@
 
 void array_iterator(int *array, size_t size, void (*action)(int))
 {
+	int index;
 
-	if (size < 1)
+	if (!action || !array)
 		return;
-	(*action) = array;
+
+	index = 0;
+	while (index < size)
+	{
+		(*action)(array[index]);
+		index++;
+	}
+
 }
