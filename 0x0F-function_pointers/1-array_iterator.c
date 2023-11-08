@@ -1,4 +1,4 @@
-#include "main.h"
+#include "function_pointers.h"
 
 /**
  * array_iterator - excute parameter given from arr.
@@ -10,16 +10,13 @@
 
 void array_iterator(int *array, size_t size, void (*action)(int))
 {
-	unsigned int index;
+	int index;
 
 	if (!action || !array)
 		return;
 
 	index = 0;
 	while (index < size)
-	{
-		action(array[index]);
+		(*action)(array[index]);
 		index++;
-	}
-
 }
