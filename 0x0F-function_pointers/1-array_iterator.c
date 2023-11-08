@@ -10,7 +10,7 @@
 
 void array_iterator(int *array, size_t size, void (*action)(int))
 {
-	int index;
+	unsigned int index;
 
 	if (!action || !array)
 		return;
