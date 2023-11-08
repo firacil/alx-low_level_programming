@@ -8,6 +8,6 @@
  */
 void print_name(char *name, void (*f)(char *))
 {
-	(*f)(char *) = &print_name_as_is;
-	(*f)(char *) = &print_name_uppercase;
+	(*f) = &print_name_as_is;
+	(*f) = &print_name_uppercase;
 }
