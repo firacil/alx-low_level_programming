@@ -10,9 +10,8 @@
 
 void array_iterator(int *array, size_t size, void (*action)(int))
 {
-	void fun(int);
 
 	if (size < 1)
 		return;
-	(*action) = fun;
+	(*action) = array;
 }
