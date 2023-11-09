@@ -3,7 +3,7 @@
 /**
  * main - program that perform simple oprations
  * @argc: number of argument
- * @aegv: array of arguments.
+ * @argv: array of arguments.
  * Return: 0(success)
  */
 
