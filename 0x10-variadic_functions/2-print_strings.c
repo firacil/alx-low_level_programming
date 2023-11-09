@@ -31,5 +31,5 @@ void print_strings(const char *separator, const unsigned int n, ...)
 
 	printf("\n");
 
-	va_ende(args);
+	va_end(args);
 }
