@@ -7,7 +7,7 @@
 void print_all(const char * const format, ...)
 {
 	int i = 0;
-	char *st, sep = "";
+	char *st, *sep = "";
 
 	va_list args;
 
@@ -46,5 +46,3 @@ void print_all(const char * const format, ...)
 	printf("\n");
 	va_end(args);
 }
-
-
