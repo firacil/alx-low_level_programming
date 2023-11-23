@@ -11,9 +11,7 @@ unsigned int binary_to_uint(const char *b)
 	int i, dec = 1, val = 0;
 
 	if (b == NULL)
-	{
 		return (0);
-	}
 
 	for (i = _strlen(b) - 1; i >= 0; i--)
 	{
@@ -28,7 +26,7 @@ unsigned int binary_to_uint(const char *b)
 		}
 		dec *= 2;
 	}
-return (val);
+	return (val);
 }
 
 /**
