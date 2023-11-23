@@ -8,8 +8,7 @@
 
 unsigned int binary_to_uint(const char *b)
 {
-	int val = 0;
-	int i, dec = 1;
+	int i, dec = 1, val = 0;
 
 	if (b == NULL)
 	{
@@ -22,13 +21,14 @@ unsigned int binary_to_uint(const char *b)
 		{
 			return (0);
 		}
+
 		if (b[i] == '1')
 		{
 			val += dec;
 		}
 		dec *= 2;
 	}
-	return (val);
+return (val);
 }
 
 /**
