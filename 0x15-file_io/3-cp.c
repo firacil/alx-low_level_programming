@@ -1,4 +1,4 @@
-#include "Main.h"
+#include "main.h"
 
 /**
  * cbuf - function allocates 1024 bytes for buffer.
