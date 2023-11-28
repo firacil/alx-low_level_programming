@@ -56,11 +56,12 @@ int main(int argc, char *argv[])
 	}
 
 	buf = cbuf(argv[2]);
+
 	file_from = open(argv[1], O_RDONLY);
+
 	reader = read(file_from, buf, 1024);
 
 	file_to = open(argv[2], O_CREAT | O_WRONLY | O_TRUNC, 0664);
-
 	do {
 		if (file_from == -1 || reader == -1)
 		{
@@ -75,10 +76,10 @@ int main(int argc, char *argv[])
 			free(buf);
 			exit(99);
 		}
+
 		reader = read(file_from, buf, 1024);
 		file_to = open(argv[2], O_WRONLY | O_APPEND);
 	} while (reader > 0);
-
 	free(buf);
 	file_closer(file_from);
 	file_closer(file_to);
