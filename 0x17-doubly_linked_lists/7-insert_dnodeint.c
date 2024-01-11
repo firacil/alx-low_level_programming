@@ -5,7 +5,7 @@
  * @h: pointer to first node.
  * @idx: location to be added.
  * @n: value to be added.
- * Returns: address of new node or NULL.
+ * Return: address of new node or NULL.
  */
 
 dlistint_t *insert_dnodeint_at_index(dlistint_t **h, unsigned int idx, int n)
